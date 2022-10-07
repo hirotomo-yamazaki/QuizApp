@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.quizapp.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
@@ -28,18 +28,14 @@ class TitleFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.makeQuizButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(
-                R.id.makeQuizFragment,
-                null
-            )
-        )
+        binding.makeQuizButton.setOnClickListener {
+            //MakeQuizFragmentの画面に遷移
+            findNavController().navigate(R.id.action_titleFragment_to_makeQuizFragment)
+        }
 
-        binding.tryQuizButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(
-                R.id.tryQuizFragment,
-                null
-            )
-        )
+        binding.tryQuizButton.setOnClickListener {
+            //TryQuizFragmentの画面に遷移
+            findNavController().navigate(R.id.action_titleFragment_to_tryQuizFragment)
+        }
     }
 }

@@ -21,7 +21,11 @@
         android:id="@+id/makeQuizFragment"
         android:name="com.example.quizapp.MakeQuizFragment"
         android:label="fragment_make_quiz"
-        tools:layout="@layout/fragment_make_quiz" />
+        tools:layout="@layout/fragment_make_quiz" >
+        <action
+            android:id="@+id/action_makeQuizFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tryQuizFragment"
         android:name="com.example.quizapp.TryQuizFragment"
