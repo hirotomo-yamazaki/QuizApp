@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.quizapp.R
 import com.example.quizapp.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
@@ -28,14 +29,19 @@ class TitleFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.makeQuizButton.setOnClickListener {
+        binding.quizListButton.setOnClickListener {
             //MakeQuizFragmentの画面に遷移
-            findNavController().navigate(R.id.action_titleFragment_to_makeQuizFragment)
+            findNavController().navigate(R.id.action_titleFragment_to_quizListFragment)
         }
 
         binding.tryQuizButton.setOnClickListener {
             //TryQuizFragmentの画面に遷移
             findNavController().navigate(R.id.action_titleFragment_to_tryQuizFragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

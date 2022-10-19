@@ -7,28 +7,37 @@
 
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.quizapp.TitleFragment"
+        android:name="com.example.quizapp.fragment.TitleFragment"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_makeQuizFragment"
-            app:destination="@id/makeQuizFragment" />
-        <action
             android:id="@+id/action_titleFragment_to_tryQuizFragment"
             app:destination="@id/tryQuizFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_quizListFragment"
+            app:destination="@id/quizListFragment" />
     </fragment>
     <fragment
         android:id="@+id/makeQuizFragment"
-        android:name="com.example.quizapp.MakeQuizFragment"
+        android:name="com.example.quizapp.fragment.MakeQuizFragment"
         android:label="fragment_make_quiz"
         tools:layout="@layout/fragment_make_quiz" >
         <action
-            android:id="@+id/action_makeQuizFragment_to_titleFragment"
-            app:destination="@id/titleFragment" />
+            android:id="@+id/action_makeQuizFragment_to_quizListFragment"
+            app:destination="@id/quizListFragment" />
     </fragment>
     <fragment
         android:id="@+id/tryQuizFragment"
-        android:name="com.example.quizapp.TryQuizFragment"
+        android:name="com.example.quizapp.fragment.TryQuizFragment"
         android:label="fragment_try_quiz"
         tools:layout="@layout/fragment_try_quiz" />
+    <fragment
+        android:id="@+id/quizListFragment"
+        android:name="com.example.quizapp.fragment.QuizListFragment"
+        android:label="fragment_quiz_list"
+        tools:layout="@layout/fragment_quiz_list" >
+        <action
+            android:id="@+id/action_quizListFragment_to_makeQuizFragment"
+            app:destination="@id/makeQuizFragment" />
+    </fragment>
 </navigation>
