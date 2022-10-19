@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enjoy_quiz">Enjoy Quiz!!</string>
+    <string name="make_quiz_text">問題入力</string>
+    <string name="try_quiz_button">答える</string>
+    <string name="make_answer_text">解答入力</string>
+    <string name="input_quiz_hint">問題を入力してください。</string>
+    <string name="input_answer_hint">正解の選択肢にチェックを入れてね</string>
+    <string name="answer_a_hint">Aの答えを入力</string>
+    <string name="answer_b_hint">Bの答えを入力</string>
+    <string name="answer_c_hint">Cの答えを入力</string>
+    <string name="answer_d_hint">Dの答えを入力</string>
+    <string name="finish_make_quiz_button">問題作成終了</string>
+    <string name="continue_make_quiz_button">続けて問題作成</string>
 </resources>
