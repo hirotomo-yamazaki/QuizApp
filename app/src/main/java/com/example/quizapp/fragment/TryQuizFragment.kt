@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -22,5 +22,10 @@ class TryQuizFragment : Fragment() {
     ): View? {
         _binding = FragmentTryQuizBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

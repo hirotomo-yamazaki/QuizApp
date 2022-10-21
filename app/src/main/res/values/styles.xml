@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text25dpAuto">
+        <item name="android:textSize">25sp</item>
+        <item name="autoSizeMaxTextSize">25sp</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="Text15dpAuto">
+        <item name="android:textSize">15sp</item>
+        <item name="autoSizeMaxTextSize">15sp</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

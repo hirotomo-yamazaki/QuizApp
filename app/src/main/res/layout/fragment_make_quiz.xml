@@ -5,16 +5,16 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MakeQuizFragment">
+    tools:context=".fragment.MakeQuizFragment">
 
     <TextView
         android:id="@+id/make_quiz_text"
+        style="@style/Text25dpAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/make_quiz_text"
-        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,28 +26,29 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/input_quiz_hint"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/make_quiz_text" />
 
     <TextView
         android:id="@+id/make_answer_text"
+        style="@style/Text25dpAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:text="@string/make_answer_text"
-        android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_quiz" />
 
     <TextView
         android:id="@+id/input_answer_hint"
+        style="@style/Text15dpAuto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="@string/input_answer_hint"
-        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/make_answer_text"
         app:layout_constraintTop_toBottomOf="@+id/make_answer_text" />
 
@@ -100,25 +101,29 @@
             android:id="@+id/answer_a_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/answer_a_hint" />
+            android:hint="@string/answer_a_hint"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/answer_b_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/answer_b_hint" />
+            android:hint="@string/answer_b_hint"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/answer_c_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/answer_c_hint" />
+            android:hint="@string/answer_c_hint"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/answer_d_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/answer_d_hint" />
+            android:hint="@string/answer_d_hint"
+            android:inputType="text" />
 
     </LinearLayout>
 

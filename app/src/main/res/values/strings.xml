@@ -13,4 +13,6 @@
     <string name="answer_d_hint">Dの答えを入力</string>
     <string name="finish_make_quiz_button">問題作成終了</string>
     <string name="continue_make_quiz_button">続けて問題作成</string>
+    <string name="quiz_list">問題一覧</string>
+    <string name="quiz_list_title">問題一覧</string>
 </resources>
